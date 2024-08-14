@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    main, footer, header {
+        padding: 25px;
+    }
+
+    article, section {
+        margin-bottom:25px;
+    }
+
+    label {
+        display: block;
+    }
+    
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Gallery</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="main-article">
+            <h2>A Brief Article</h2>
+            <p>This is a simple article to demonstrate the use of semantic HTML. Semantic elements clearly describe their meaning in a human- and machine-readable way.</p>
+        </article>
+
+        <section class="comment-section">
+            <h2>Leave a Comment</h2>
+            <form>
+                <section>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </section>
+
+                <section>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment"></textarea>
+                </section>
+
+                <section>
+                    <button type="submit">Submit</button>
+                </section>
+            </form>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+    
+            <details>
+                <summary>What is semantic HTML?</summary>
+                <p>Semantic HTML refers to the use of HTML tags that convey meaning about the content they contain. Examples include <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;nav&gt;</code>. Using semantic HTML improves accessibility, SEO, and makes your code easier to read and maintain.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
