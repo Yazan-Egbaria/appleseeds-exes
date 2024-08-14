@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 10rem;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 2.4rem;
+}
+nav li a {
+    color: white;
+    border-bottom: 1px solid black;
+    transition: 0.3s;
+}
+nav li a.active {
+    border-bottom: 1px solid white;
+}
+nav li a:hover {
+    border-bottom: 1px solid white;
+}
+
+main {
+    width: 100vw;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    height: 70vh;
+    width: 75%;
+    margin: auto;
+}
+
+.text-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1.6rem;
+    width: 40%;
+}
+
+.text h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+.text p {
+    font-size: 2rem;
+}
+
+.images {
+    position: relative;
+}
+
+.images img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.image-one {
+    position: absolute;
+    top: -150px;
+    left: -350px;
+}
+.image-two {
+    position: absolute;
+    top: 250px;
+    left: -270px;
+    object-position: top;
+}
+
+.photography-nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.photography-nav li a {
+    color: black;
+    border:1px solid white;
+    transition: 0.3s;
+}
+.photography-nav li a.active {
+    border-bottom: 1px solid black;
+}
+.photography-nav li a:hover {
+    border-bottom: 1px solid black;
+}
+
+.testimonials {
+    width: 100vw;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    gap: 12px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.testimonials h2 {
+    font-size: 5rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.card {
+    width: 500px;
+    height: auto;
+    color: white;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.card img {
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card h3 {
+    font-size: 3rem;
+    padding: 10px;
+}
+.card p {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.contact {
+    width: 75%;
+    margin: auto;
+    min-height: 1000px;
+    margin-top: 50px;
+}
+h2 {
+    font-size: 5rem;
+}
+label {
+    font-size: 4rem;
+}
+
+.contact section {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 4px;
+    margin-top: 32px;
+}
+
+.contact input {
+    width: 25%;
+    height: 80px;
+    border-radius: 10px;
+
+}
+
+.contact input[type=submit] {
+    border: none;
+    margin-top: 32px;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact input[type=submit]:hover {
+    background: white;
+    color: black;
+}
+
+footer {
+    background: #000;
+    color: white;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h4 {
+    font-size:3rem;
+    margin-bottom: 25px;
+}
+
+footer p {
+    font-size: 2rem;
+}
+
+footer a {
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    bottom: -150px;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.photo-main {
+    width: 100vw;
+    height: 77vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.photo-main h1 {
+    font-size: 3.5rem;
+}
+.photo-main p {
+    font-size: 2rem;
+}
+.photo-main a {
+    font-size: 2rem;
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.photo-main img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
